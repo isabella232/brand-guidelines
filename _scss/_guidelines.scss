@@ -1,40 +1,8 @@
 // start content
 @import url('https://fonts.googleapis.com/css?family=Prompt');
 
-// body {
-//   background: $light-grey;
-//   font-family: 'Prompt', sans-serif;
-//   color: $secondary;
-//   .container {
-//     background: white;
-//     padding: 20px;
-//     margin: 20px auto;
-//   }
-//   //nav
-//   nav {
-//     border-radius: 3px;
-//     ul {
-//       margin: 0;
-//       padding: 0;
-//       list-style-type: none;
-//       li {
-//         padding: 0;
-//       }
-//     }
-    
-//     &.top-nav {
-//       background: $secondary;
-      
-//       li {
-//         display: inline-block;
-//         a {
-//           color: $light-grey;
-//           padding: 0 5px;
-//         }
-//       }
-//     }
-//   }
-// }
+
+
 //demo
 .img-fluid {
   width: 100%;
@@ -60,6 +28,12 @@
   }
 }
 
+.logo {
+  height: 100px;
+  border: $accent-border solid 5px;
+  background: $accent-bg;
+}
+
 .yes {
   &:before {
         content:"yes";
@@ -74,19 +48,19 @@
   }
 }
 //colors
-.light-grey {
+.bg-light-grey {
   background: $light-grey;
 }
 
-.mid-grey {
+.bg-mid-grey {
   background: $mid-grey;
 }
 
-.dark-grey {
+.bg-dark-grey {
   background: $dark-grey;
 }
 
-.black {
+.bg-black {
   background: $black;
 }
 
