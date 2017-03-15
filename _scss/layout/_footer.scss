@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+ footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  background: $footer;
+  width: 100%;
+ }

@@ -1,0 +1,9 @@
+# Site settings
+title: "Brand Assets"
+description: "Guidelines, assets and styles"
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _scss
+  style: compressed
