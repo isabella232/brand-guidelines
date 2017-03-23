@@ -5,7 +5,9 @@
 .sidebar {
   nav {
     position: fixed;
-    background: $light-grey;
+    width: 12.416%;
+    // width: 15.416%;
+    
       ul {
         list-style-type: none;
         margin: 0;
@@ -15,11 +17,16 @@
         li {
           a {
             padding: 10px 15px;
+            margin-bottom: 5px;
             display: block;
             width: 100%;
+            background: $light-grey;
+            border-bottom: 0;
 
             &:hover {
-              background: $mid-grey;
+              background: lighten($mid-grey, 20);
+              color: $link-color;
+              text-decoration: none;
             }
           }
         }
