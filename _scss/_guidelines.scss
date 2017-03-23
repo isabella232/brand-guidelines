@@ -2,6 +2,41 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt');
 
 
+.sidebar {
+  nav {
+    position: fixed;
+    background: $light-grey;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        li {
+          a {
+            padding: 10px 15px;
+            display: block;
+            width: 100%;
+
+            &:hover {
+              background: $mid-grey;
+            }
+          }
+        }
+      }
+  }
+}
+
+.sub-section {
+  margin-top: 30px;
+  margin-bottom: 0;
+  background: $bg-default;
+  padding: 10px;
+}
+
+h5 {
+  color: $mid-grey;
+}
 
 //demo
 .img-fluid {
