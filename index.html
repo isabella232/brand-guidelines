@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip-html | strip-newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -40,313 +40,345 @@
             <main class="col span-10">
                 <h1>Rancher Marketing Style Guide and Assets</h1>
                 <p>Hi there! We've put together a handy dandy style guide to reference to Rancher-ify any materials.</p>
-                <h2 id="logos">Logos</h2>
-                <div class="bg-light-grey p-20">
-                    <h3>Basic Usage</h3>
+                <section class="mt-50">
+                <h2>Basic Logo Usage</h2>
+                    <div class="bg-light-grey p-50 mb-50">
+                        <div class="row">
+                            <div class="col span-3 yes">
+                                <img src="assets/logos/svg/white/rancher-logo-rancher-labs-stacked-wht.svg" class="img-fluid p-10 bg-black" />
+                                <p>Light logos are for dark backgrounds and vice versa</p>
+                            </div>
+                            <div class="col span-3 yes">
+                                <img src="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" class="img-fluid p-10" />
+                                <p> Use the Rancher Labs logos when referring to the company</p>
+                            </div>
+                            <div class="col span-3 yes">
+                                <img src="assets/logos/svg/color/rancher-logo-stacked-full-color.svg" class="img-fluid p-10" />
+                                <p>Use the Rancher logos when referring to the product</p>
+                            </div>
+                            <div class="col span-3 yes">
+                                <img src="assets/logos/svg/cow/rancher-logo-cow-blue.svg" class="img-fluid" />
+                                <p>Always use a cow with a registration mark</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-3 no">
+                                <img src="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" class="img-fluid p-10 bg-black" />
+                                <p>Don't use the full color logo on dark backgrounds</p>
+                            </div>
+                            <div class="col span-3 no">
+                                <img src="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" class="img-fluid p-10" style="background-image: url(http://lorempixel.com/200/100/abstract/);" />
+                                <p>...or on a busy
+                                    <br>background</p>
+                            </div>
+                            <div class="col span-3 no">
+                                <img src="img/nope-logos-registered-rancher-labs-stacked.svg" class="img-fluid p-10" />
+                                <p>Don't change the color of the logo</p>
+                            </div>
+                            <div class="col span-3 no">
+                                <img src="img/dealwithit.svg" class="glasses" />
+                                <img src="assets/logos/svg/cow/rancher-logo-cow-blue.svg" />
+                                <p>Don't obsruct the logo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="logos">Logos</h2>
+                    <div class="sub-section pt-50">
+                        <h3>Horizontal logo</h3>
+                        <div class="row">
+                            <div class="col span-4">
+                                <h5>Horizontal Full Color</h5>
+                                <img src="assets/logos/svg/color/rancher-logo-horiz-full-color.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/color/rancher-logo-horiz-full-color.png" download="rancher-logo-horiz-full-color">Download horiz-full-color.png</a></p>
+                                <p><a href="assets/logos/eps/color/rancher-logo-horiz-full-color.eps" download="rancher-logo-horiz-full-color">Download horiz-full-color.eps</a></p>
+                                <p><a href="assets/logos/svg/color/rancher-logo-horiz-full-color.svg" download="rancher-logo-horiz-full-color">Download horiz-full-color.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Horizontal Black</h5>
+                                <img src="assets/logos/svg/black/rancher-logo-horiz-blk.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/black/rancher-logo-horiz-blk.png" download="rancher-logo-horiz-blk">Download horiz-blk.png</a></p>
+                                <p><a href="assets/logos/eps/black/rancher-logo-horiz-blk.eps" download="rancher-logo-horiz-blk">Download horiz-blk.eps</a></p>
+                                <p><a href="assets/logos/svg/black/rancher-logo-horiz-blk.svg" download="rancher-logo-horiz-blk">Download horiz-blk.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Horizontal White</h5>
+                                <img src="assets/logos/svg/white/rancher-logo-horiz-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
+                                <p><a href="assets/logos/png/white/rancher-logo-horiz-wht.png" download="rancher-logo-horiz-wht">Download horiz-wht.png</a></p>
+                                <p><a href="assets/logos/eps/white/rancher-logo-horiz-wht.eps" download="rancher-logo-horiz-wht">Download horiz-wht.eps</a></p>
+                                <p><a href="assets/logos/svg/white/rancher-logo-horiz-wht.svg" download="rancher-logo-horiz-wht">Download horiz-wht.svg</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>Stacked logo</h3>
+                        <div class="row">
+                            <div class="col span-4">
+                                <h5>Stacked Full Color</h5>
+                                <img src="assets/logos/svg/color/rancher-logo-stacked-full-color.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/color/rancher-logo-stacked-full-color.png" download="rancher-logo-stacked-full-color">Download stacked-full-color.png</a></p>
+                                <p><a href="assets/logos/eps/color/rancher-logo-stacked-full-color.eps" download="rancher-logo-stacked-full-color">Download stacked-full-color.eps</a></p>
+                                <p><a href="assets/logos/svg/color/rancher-logo-stacked-full-color.svg" download="rancher-logo-stacked-full-color">Download stacked-full-color.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Stacked Black</h5>
+                                <img src="assets/logos/svg/black/rancher-logo-stacked-blk.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/black/rancher-logo-stacked-blk.png" download="rancher-logo-stacked-blk">Download stacked-blk.png</a></p>
+                                <p><a href="assets/logos/eps/black/rancher-logo-stacked-blk.eps" download="rancher-logo-stacked-blk">Download stacked-blk.eps</a></p>
+                                <p><a href="assets/logos/svg/black/rancher-logo-stacked-blk.svg" download="rancher-logo-stacked-blk">Download stacked-blk.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Stacked White</h5>
+                                <img src="assets/logos/svg/white/rancher-logo-stacked-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
+                                <p><a href="assets/logos/png/white/rancher-logo-stacked-wht.png" download="rancher-logo-stacked-wht">Download stacked-wht.png</a></p>
+                                <p><a href="assets/logos/eps/white/rancher-logo-stacked-wht.eps" download="rancher-logo-stacked-wht">Download stacked-wht.eps</a></p>
+                                <p><a href="assets/logos/svg/white/rancher-logo-stacked-wht.svg" download="rancher-logo-stacked-wht">Download stacked-wht.svg</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>Rancher Labs logo</h3>
+                        <div class="row">
+                            <div class="col span-4">
+                                <h5>Rancher Labs Full Color</h5>
+                                <img src="assets/logos/svg/color/rancher-logo-rancher-labs-full.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/color/rancher-logo-rancher-labs-full.png" download="proposed-file-name">Download name-of-file.png</a></p>
+                                <p><a href="assets/logos/eps/color/rancher-logo-rancher-labs-full.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
+                                <p><a href="assets/logos/svg/color/rancher-logo-rancher-labs-full.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Rancher Labs Black</h5>
+                                <img src="assets/logos/svg/black/rancher-logo-rancher-labs-blk.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/black/rancher-logo-rancher-labs-blk.png" download="proposed-file-name">Download name-of-file.png</a></p>
+                                <p><a href="assets/logos/eps/black/rancher-logo-rancher-labs-blk.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
+                                <p><a href="assets/logos/svg/black/rancher-logo-rancher-labs-blk.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Rancher Labs White</h5>
+                                <img src="assets/logos/svg/white/rancher-logo-rancher-labs-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
+                                <p><a href="assets/logos/png/white/rancher-logo-rancher-labs-wht.png" download="proposed-file-name">Download name-of-file.png</a></p>
+                                <p><a href="assets/logos/eps/white/rancher-logo-rancher-labs-wht.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
+                                <p><a href="assets/logos/svg/white/rancher-logo-rancher-labs-wht.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>Stacked Rancher Labs logo</h3>
+                        <div class="row">
+                            <div class="col span-4">
+                                <h5>Stacked Rancher Labs Full Color</h5>
+                                <img src="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/color/rancher-logo-rancher-labs-stacked-full.png" download="proposed-file-name">Download name-of-file.png</a></p>
+                                <p><a href="assets/logos/eps/color/rancher-logo-rancher-labs-stacked-full.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
+                                <p><a href="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Stacked Rancher Labs Black</h5>
+                                <img src="assets/logos/svg/black/rancher-logo-rancher-labs-stacked-blk.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/black/rancher-logo-rancher-labs-stacked-blk.png" download="proposed-file-name">Download name-of-file.png</a></p>
+                                <p><a href="assets/logos/eps/black/rancher-logo-rancher-labs-stacked-blk.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
+                                <p><a href="assets/logos/svg/black/rancher-logo-rancher-labs-stacked-blk.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Stacked Rancher Labs White</h5>
+                                <img src="assets/logos/svg/white/rancher-logo-rancher-labs-stacked-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
+                                <p><a href="assets/logos/png/white/rancher-logo-rancher-labs-stacked-wht.png" download="proposed-file-name">Download name-of-file.png</a></p>
+                                <p><a href="assets/logos/eps/white/rancher-logo-rancher-labs-stacked-wht.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
+                                <p><a href="assets/logos/svg/white/rancher-logo-rancher-labs-stacked-wht.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>Cow</h3>
+                        <div class="row">
+                            <div class="col span-4">
+                                <h5>Cow Full Color</h5>
+                                <img src="assets/logos/svg/cow/rancher-logo-cow-blue.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/cow/rancher-logo-cow-blue.svg.png" download="proposed-file-name">Download name-of-file.png</a></p>
+                                <p><a href="assets/logos/eps/cow/rancher-logo-cow-blue.svg.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
+                                <p><a href="assets/logos/svg/cow/rancher-logo-cow-blue.svg.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Cow Black</h5>
+                                <img src="assets/logos/svg/cow/rancher-logo-cow-blk.svg" class="img-fluid logo p-10" />
+                                <p><a href="assets/logos/png/cow/rancher-logo-cow-blk.png" download="proposed-file-name">Download name-of-file.png</a></p>
+                                <p><a href="assets/logos/eps/cow/rancher-logo-cow-blk.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
+                                <p><a href="assets/logos/svg/cow/rancher-logo-cow-blk.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
+                            </div>
+                            <div class="col span-4">
+                                <h5>Cow White</h5>
+                                <img src="assets/logos/svg/cow/rancher-logo-cow-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
+                                <p><a href="assets/logos/png/cow/rancher-logo-cow-wht.png" download="proposed-file-name">Download name-of-file.png</a></p>
+                                <p><a href="assets/logos/eps/cow/rancher-logo-cow-wht.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
+                                <p><a href="assets/logos/svg/cow/rancher-logo-cow-wht.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 id="colors">Colors</h2>
                     <div class="row">
-                        <div class="col span-3 yes">
-                            <img src="assets/logos/svg/white/rancher-logo-rancher-labs-stacked-wht.svg" class="img-fluid p-10 bg-black" />
-                            <p>Light logos are for dark backgrounds and vice versa</p>
+                        <div class="col span-2 text-center">
+                            <div title="$primary" class="dot bg-primary">
+                                <!--         <div class="lighten"></div>
+        <div class="darken"></div> -->
+                            </div>
+                            <p>Primary</p>
+                            <p>#0075A8</p>
                         </div>
-                        <div class="col span-3 yes">
-                            <img src="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" class="img-fluid p-10" />
-                            <p> Use the Rancher Labs logos when referring to the company</p>
+                        <div class="col span-2 text-center">
+                            <div title="$secondary" class="dot bg-secondary">
+                                <!--         <div class="lighten"></div>
+        <div class="darken"></div> -->
+                            </div>
+                            <p>Secondary</p>
+                            <p>#34495E</p>
                         </div>
-                        <div class="col span-3 yes">
-                            <img src="assets/logos/svg/color/rancher-logo-stacked-full-color.svg" class="img-fluid p-10" />
-                            <p>Use the Rancher logos when referring to the product</p>
+                        <div class="col span-2 text-center">
+                            <div title="$light-grey" class="dot bg-light-grey">
+                                <!--         <div class="lighten"></div>
+        <div class="darken"></div> -->
+                            </div>
+                            <p>Light Grey</p>
+                            <p>#ecf0f1</p>
                         </div>
-                        <div class="col span-3 yes">
-                            <img src="assets/logos/svg/cow/rancher-logo-cow-blue.svg" class="img-fluid" />
-                            <p>Always use a cow with a registration mark</p>
+                        <div class="col span-2 text-center">
+                            <div title="$mid-grey" class="dot bg-mid-grey">
+                                <!--         <div class="lighten"></div>
+        <div class="darken"></div> -->
+                            </div>
+                            <p>Mid Grey</p>
+                            <p>#99a3a8</p>
+                        </div>
+                        <div class="col span-2 text-center">
+                            <div title="$dark-grey" class="dot bg-dark-grey">
+                                <!--         <div class="lighten"></div>
+        <div class="darken"></div> -->
+                            </div>
+                            <p>Dark Grey</p>
+                            <p>#3d3d3d</p>
+                        </div>
+                        <div class="col span-2 text-center">
+                            <div title="$black" class="dot bg-black">
+                                <!--         <div class="lighten"></div>
+        <div class="darken"></div> -->
+                            </div>
+                            <p>Black</p>
+                            <p>#313131</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col span-3 no">
-                            <img src="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" class="img-fluid p-10 bg-black" />
-                            <p>Don't use the full color logo on dark backgrounds</p>
-                        </div>
-                        <div class="col span-3 no">
-                            <img src="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" class="img-fluid p-10" style="background-image: url(http://lorempixel.com/200/100/abstract/);" />
-                            <p>...or on a busy
-                                <br>background</p>
-                        </div>
-                        <div class="col span-3 no">
-                            <img src="img/nope-logos-registered-rancher-labs-stacked.svg" class="img-fluid p-10" />
-                            <p>Don't change the color of the logo</p>
-                        </div>
-                        <div class="col span-3 no">
-                            <img src="img/dealwithit.svg" class="glasses" />
-                            <img src="assets/logos/svg/cow/rancher-logo-cow-blue.svg" />
-                            <p>Don't obsruct the logo</p>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="sub-section">Horizontal logo</h3>
-                <div class="row">
-                    <div class="col span-4">
-                        <h5>Horizontal Full Color</h5>
-                        <img src="assets/logos/svg/color/rancher-logo-horiz-full-color.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/color/rancher-logo-horiz-full-color.png" download="rancher-logo-horiz-full-color">Download horiz-full-color.png</a></p>
-                        <p><a href="assets/logos/eps/color/rancher-logo-horiz-full-color.eps" download="rancher-logo-horiz-full-color">Download horiz-full-color.eps</a></p>
-                        <p><a href="assets/logos/svg/color/rancher-logo-horiz-full-color.svg" download="rancher-logo-horiz-full-color">Download horiz-full-color.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Horizontal Black</h5>
-                        <img src="assets/logos/svg/black/rancher-logo-horiz-blk.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/black/rancher-logo-horiz-blk.png" download="rancher-logo-horiz-blk">Download horiz-blk.png</a></p>
-                        <p><a href="assets/logos/eps/black/rancher-logo-horiz-blk.eps" download="rancher-logo-horiz-blk">Download horiz-blk.eps</a></p>
-                        <p><a href="assets/logos/svg/black/rancher-logo-horiz-blk.svg" download="rancher-logo-horiz-blk">Download horiz-blk.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Horizontal White</h5>
-                        <img src="assets/logos/svg/white/rancher-logo-horiz-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
-                        <p><a href="assets/logos/png/white/rancher-logo-horiz-wht.png" download="rancher-logo-horiz-wht">Download horiz-wht.png</a></p>
-                        <p><a href="assets/logos/eps/white/rancher-logo-horiz-wht.eps" download="rancher-logo-horiz-wht">Download horiz-wht.eps</a></p>
-                        <p><a href="assets/logos/svg/white/rancher-logo-horiz-wht.svg" download="rancher-logo-horiz-wht">Download horiz-wht.svg</a></p>
-                    </div>
-                </div>
-                <h3 class="sub-section">Stacked logo</h3>
-                <div class="row">
-                    <div class="col span-4">
-                        <h5>Stacked Full Color</h5>
-                        <img src="assets/logos/svg/color/rancher-logo-stacked-full-color.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/color/rancher-logo-stacked-full-color.png" download="rancher-logo-stacked-full-color">Download stacked-full-color.png</a></p>
-                        <p><a href="assets/logos/eps/color/rancher-logo-stacked-full-color.eps" download="rancher-logo-stacked-full-color">Download stacked-full-color.eps</a></p>
-                        <p><a href="assets/logos/svg/color/rancher-logo-stacked-full-color.svg" download="rancher-logo-stacked-full-color">Download stacked-full-color.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Stacked Black</h5>
-                        <img src="assets/logos/svg/black/rancher-logo-stacked-blk.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/black/rancher-logo-stacked-blk.png" download="rancher-logo-stacked-blk">Download stacked-blk.png</a></p>
-                        <p><a href="assets/logos/eps/black/rancher-logo-stacked-blk.eps" download="rancher-logo-stacked-blk">Download stacked-blk.eps</a></p>
-                        <p><a href="assets/logos/svg/black/rancher-logo-stacked-blk.svg" download="rancher-logo-stacked-blk">Download stacked-blk.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Stacked White</h5>
-                        <img src="assets/logos/svg/white/rancher-logo-stacked-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
-                        <p><a href="assets/logos/png/white/rancher-logo-stacked-wht.png" download="rancher-logo-stacked-wht">Download stacked-wht.png</a></p>
-                        <p><a href="assets/logos/eps/white/rancher-logo-stacked-wht.eps" download="rancher-logo-stacked-wht">Download stacked-wht.eps</a></p>
-                        <p><a href="assets/logos/svg/white/rancher-logo-stacked-wht.svg" download="rancher-logo-stacked-wht">Download stacked-wht.svg</a></p>
-                    </div>
-                </div>
-                <h3 class="sub-section">Rancher Labs logo</h3>
-                <div class="row">
-                    <div class="col span-4">
-                        <h5>Rancher Labs Full Color</h5>
-                        <img src="assets/logos/svg/color/rancher-logo-rancher-labs-full.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/color/rancher-logo-rancher-labs-full.png" download="proposed-file-name">Download name-of-file.png</a></p>
-                        <p><a href="assets/logos/eps/color/rancher-logo-rancher-labs-full.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
-                        <p><a href="assets/logos/svg/color/rancher-logo-rancher-labs-full.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Rancher Labs Black</h5>
-                        <img src="assets/logos/svg/black/rancher-logo-rancher-labs-blk.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/black/rancher-logo-rancher-labs-blk.png" download="proposed-file-name">Download name-of-file.png</a></p>
-                        <p><a href="assets/logos/eps/black/rancher-logo-rancher-labs-blk.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
-                        <p><a href="assets/logos/svg/black/rancher-logo-rancher-labs-blk.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Rancher Labs White</h5>
-                        <img src="assets/logos/svg/white/rancher-logo-rancher-labs-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
-                        <p><a href="assets/logos/png/white/rancher-logo-rancher-labs-wht.png" download="proposed-file-name">Download name-of-file.png</a></p>
-                        <p><a href="assets/logos/eps/white/rancher-logo-rancher-labs-wht.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
-                        <p><a href="assets/logos/svg/white/rancher-logo-rancher-labs-wht.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
-                    </div>
-                </div>
-                <h3 class="sub-section">Stacked Rancher Labs logo</h3>
-                <div class="row">
-                    <div class="col span-4">
-                        <h5>Stacked Rancher Labs Full Color</h5>
-                        <img src="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/color/rancher-logo-rancher-labs-stacked-full.png" download="proposed-file-name">Download name-of-file.png</a></p>
-                        <p><a href="assets/logos/eps/color/rancher-logo-rancher-labs-stacked-full.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
-                        <p><a href="assets/logos/svg/color/rancher-logo-rancher-labs-stacked-full.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Stacked Rancher Labs Black</h5>
-                        <img src="assets/logos/svg/black/rancher-logo-rancher-labs-stacked-blk.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/black/rancher-logo-rancher-labs-stacked-blk.png" download="proposed-file-name">Download name-of-file.png</a></p>
-                        <p><a href="assets/logos/eps/black/rancher-logo-rancher-labs-stacked-blk.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
-                        <p><a href="assets/logos/svg/black/rancher-logo-rancher-labs-stacked-blk.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Stacked Rancher Labs White</h5>
-                        <img src="assets/logos/svg/white/rancher-logo-rancher-labs-stacked-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
-                        <p><a href="assets/logos/png/white/rancher-logo-rancher-labs-stacked-wht.png" download="proposed-file-name">Download name-of-file.png</a></p>
-                        <p><a href="assets/logos/eps/white/rancher-logo-rancher-labs-stacked-wht.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
-                        <p><a href="assets/logos/svg/white/rancher-logo-rancher-labs-stacked-wht.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
-                    </div>
-                </div>
-                <h3 class="sub-section">Cow</h3>
-                <div class="row">
-                    <div class="col span-4">
-                        <h5>Cow Full Color</h5>
-                        <img src="assets/logos/svg/cow/rancher-logo-cow-blue.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/cow/rancher-logo-cow-blue.svg.png" download="proposed-file-name">Download name-of-file.png</a></p>
-                        <p><a href="assets/logos/eps/cow/rancher-logo-cow-blue.svg.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
-                        <p><a href="assets/logos/svg/cow/rancher-logo-cow-blue.svg.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Cow Black</h5>
-                        <img src="assets/logos/svg/cow/rancher-logo-cow-blk.svg" class="img-fluid logo p-10" />
-                        <p><a href="assets/logos/png/cow/rancher-logo-cow-blk.png" download="proposed-file-name">Download name-of-file.png</a></p>
-                        <p><a href="assets/logos/eps/cow/rancher-logo-cow-blk.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
-                        <p><a href="assets/logos/svg/cow/rancher-logo-cow-blk.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
-                    </div>
-                    <div class="col span-4">
-                        <h5>Cow White</h5>
-                        <img src="assets/logos/svg/cow/rancher-logo-cow-wht.svg" class="img-fluid logo p-10 bg-mid-grey" />
-                        <p><a href="assets/logos/png/cow/rancher-logo-cow-wht.png" download="proposed-file-name">Download name-of-file.png</a></p>
-                        <p><a href="assets/logos/eps/cow/rancher-logo-cow-wht.eps" download="proposed-file-name">Download name-of-file.eps</a></p>
-                        <p><a href="assets/logos/svg/cow/rancher-logo-cow-wht.svg" download="proposed-file-name">Download name-of-file.svg</a></p>
-                    </div>
-                </div>
-                <hr>
-                <h2 id="colors">Colors</h2>
-                <div class="row">
-                    <div class="col span-2 text-center">
-                        <div title="$primary" class="dot bg-primary">
-                            <!--         <div class="lighten"></div>
+                        <div class="col span-2 text-center">
+                            <div title="$info" class="dot bg-info">
+                                <!--         <div class="lighten"></div>
         <div class="darken"></div> -->
+                            </div>
+                            <p>Accent/Info</p>
+                            <p>#78C9CF</p>
                         </div>
-                        <p>Primary</p>
-                        <p>#0075A8</p>
-                    </div>
-                    <div class="col span-2 text-center">
-                        <div title="$secondary" class="dot bg-secondary">
-                            <!--         <div class="lighten"></div>
+                        <div class="col span-2 text-center text-center">
+                            <div title="$success" class="dot bg-success">
+                                <!--         <div class="lighten"></div>
         <div class="darken"></div> -->
+                            </div>
+                            <p>Success</p>
+                            <p>#27AE5F</p>
                         </div>
-                        <p>Secondary</p>
-                        <p>#34495E</p>
-                    </div>
-                    <div class="col span-2 text-center">
-                        <div title="$light-grey" class="dot bg-light-grey">
-                            <!--         <div class="lighten"></div>
+                        <div class="col span-2 text-center">
+                            <div title="$warning" class="dot bg-warning">
+                                <!--         <div class="lighten"></div>
         <div class="darken"></div> -->
+                            </div>
+                            <p>Warning</p>
+                            <p>#F1C40F</p>
                         </div>
-                        <p>Light Grey</p>
-                        <p>#ecf0f1</p>
-                    </div>
-                    <div class="col span-2 text-center">
-                        <div title="$mid-grey" class="dot bg-mid-grey">
-                            <!--         <div class="lighten"></div>
+                        <div class="col span-2 text-center">
+                            <div title="$error" class="dot bg-error">
+                                <!--         <div class="lighten"></div>
         <div class="darken"></div> -->
+                            </div>
+                            <p>Error</p>
+                            <p>#F15354</p>
                         </div>
-                        <p>Mid Grey</p>
-                        <p>#99a3a8</p>
-                    </div>
-                    <div class="col span-2 text-center">
-                        <div title="$dark-grey" class="dot bg-dark-grey">
-                            <!--         <div class="lighten"></div>
+                        <div class="col span-2 text-center">
+                            <div title="$disabled" class="dot bg-disabled">
+                                <!--         <div class="lighten"></div>
         <div class="darken"></div> -->
+                            </div>
+                            <p>Disabled</p>
+                            <p>##dee1e3</p>
                         </div>
-                        <p>Dark Grey</p>
-                        <p>#3d3d3d</p>
-                    </div>
-                    <div class="col span-2 text-center">
-                        <div title="$black" class="dot bg-black">
-                            <!--         <div class="lighten"></div>
+                        <div class="col span-2 text-center">
+                            <div title="$default" class="dot bg-default">
+                                <!--         <div class="lighten"></div>
         <div class="darken"></div> -->
+                            </div>
+                            <p>Default</p>
+                            <p>#ecf0f1</p>
                         </div>
-                        <p>Black</p>
-                        <p>#313131</p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-2 text-center">
-                        <div title="$info" class="dot bg-info">
-                            <!--         <div class="lighten"></div>
-        <div class="darken"></div> -->
+                </section>
+                <section>
+                    <h1>h1 header</h1>
+                    <h2>h2 header</h2>
+                </section>
+                
+                <section>
+                    <h2>Templates</h2>
+                    <div class="sub-section">
+                        <h3>Email Signature</h3>
+                        <div class="row">
+                            <!--email sig-->
+                            <table border="0" cellspacing="0" cellpadding="0" width="485" style="width: 485px; display: inline-block">
+                                <tbody>
+                                    <tr valign="top">
+                                        <!--  <td style="width: 10px; padding-right:10px; vertical-align: middle; background-color: #0075A8;"> <img src="https://s3.amazonaws.com/ucwebapp.wisestamp.com/a20309ee-9fe7-4f16-aaa9-1256a210bcbe/rancherlogocowwhite.format_png.resize_200x.png#logo" width="65" height="28.7396694215" alt="photo" style="border-radius: 4px; width: 65px; height: 29px; max-width: 120px;" data-pin-nopin="true"> </td> -->
+                                        <td style="width: 10px; padding:0 10px; text-align:center; vertical-align: middle; background-color: #0075A8;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 242.2 107.4" style="enable-background:new 0 0 242.2 107.4;" xml:space="preserve" data-ember-extension="1" width="65" height="28.7396694215">
+                                                <g>
+                                                    <g>
+                                                        <path fill="#fff" d="M229,23.6l-2.5-14.9c-0.8-4.8-2.7-8.7-4.1-8.7c-1.5,0-2.7,4-2.7,8.8v3.9c0,4.8-4,8.8-8.8,8.8H207    c-0.3,0-0.6,0-0.8,0v10.7c0.3,0,0.6,0,0.8,0h14.7C226.5,32.2,229.8,28.3,229,23.6" />
+                                                        <path fill="#fff" d="M193.9,11h-23.7c-0.2,0-0.4,0-0.6,0h-24.4c-0.3,0-0.6,0-0.8,0.1V8.8c0-4.8-1.2-8.8-2.7-8.8s-3.3,3.9-4.1,8.7    l-2.5,14.9c-0.8,4.8,2.5,8.7,7.4,8.7h14.6c1.5,0,2.9-0.2,4.2-0.6c-0.5,2.5-2.6,4.4-5.3,4.4h-20.5c-3.3,0-5.8-3-5.3-6.3l2.1-12.5    c0.5-3.3-2-6.3-5.3-6.3H24.8c-2.2,0-4,1.3-4.9,3.2L0.7,43.5c-0.3,0.5-0.3,1.1,0.1,1.6l3.7,4.4c0.5,0.6,1.3,0.6,1.9,0.2l13.1-10.3    V102c0,3,2.4,5.4,5.4,5.4h29c3,0,5.4-2.4,5.4-5.4V80.2c0-3,2.4-5.4,5.4-5.4h72.4c3,0,5.4,2.4,5.4,5.4V102c0,3,2.4,5.4,5.4,5.4h29    c3,0,5.4-2.4,5.4-5.4V78.6h-15.4c-4.8,0-8.8-4-8.8-8.8V54.7c0-2.9,1.4-5.4,3.5-7v18c0,4.8,4,8.8,8.8,8.8h23.7c4.8,0,8.8-4,8.8-8.8    V19.9C202.7,14.9,198.8,11,193.9,11" />
+                                                    </g>
+                                                    <g>
+                                                        <path fill="#fff" d="M230.6,5.6c0-3.9,2.9-5.6,5.6-5.6s5.6,1.7,5.6,5.6c0,3.8-2.9,5.5-5.6,5.5S230.6,9.4,230.6,5.6z M240.5,5.6    c0-3.1-2-4.4-4.2-4.4S232,2.5,232,5.6c0,3,2.1,4.4,4.3,4.4C238.5,9.9,240.5,8.6,240.5,5.6z M234.4,2.8h2c1,0,2,0.3,2,1.7    c0,0.8-0.6,1.3-1.3,1.5l1.3,2.3h-1.2L236,6.1h-0.5v2.2h-1.1L234.4,2.8L234.4,2.8z M236.4,5.3c0.5,0,0.9-0.3,0.9-0.8    c0-0.6-0.5-0.7-0.9-0.7h-1v1.5H236.4z" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </td>
+                                        <td style="display: inline-block; text-align:initial; font:12px Verdana;color:#646464;padding:0 10px">
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="display: inline-block; text-align:initial; font:12px Verdana;color:#646464;"> <b class="text-color theme-font">First Name</b>
+                                                            <br> <span style="display: inline-block;">Your Title here</span>, <span style="display: inline-block;">Rancher Labs</span> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font:12px Verdana; color:#8d8d8d;font-size:12px;padding:5px 0"> <span style="display:inline-block;"><a href="tel:555-555-5555" style="display:inline-block; color:#8d8d8d;text-decoration: none;">555-555-5555</a></span> <span style="color: #78c9cf;display:inline-block;">|</span> <span style="display:inline-block;"><a href="mailto:name@rancher.com" style="display: inline-block; color:#8d8d8d;text-decoration: none;">name@rancher.com</a></span> <span style="color: #78c9cf;display:inline-block;">|</span> <span style="white-space: nowrap;display:inline-block;"><a href="http://rancher.com" rel="nofollow" target="_blank" style="display: inline-block; color:#8d8d8d;text-decoration: none;">rancher.com</a></span> <span style="color: #78c9cf;display:inline-block;">|<br></span> <span style="color:#8d8d8d; display:inline-block;">10050 N Wolfe Road, Suite SW1-272 Cupertino, CA 95014 USA</span> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="margin-top: 5px">
+                                                            <a href="http://github.com/rancherio/rancher" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/github.png"></a>&nbsp;
+                                                            <a href="http://www.facebook.com/rancherlabs" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/facebook.png"></a>&nbsp;
+                                                            <a href="http://www.linkedin.com/company-beta/4819449/?pathWildcard=4819449" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/linkedin.png"></a>&nbsp;
+                                                            <a href="http://twitter.com/Rancher_Labs" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/twitter.png"></a>&nbsp;
+                                                            <a href="http://www.youtube.com/channel/UCh5Xtp82q8wjijP8npkVTBA/" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/youtube.png"></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--email sig-->
                         </div>
-                        <p>Accent/Info</p>
-                        <p>#78C9CF</p>
                     </div>
-                    <div class="col span-2 text-center text-center">
-                        <div title="$success" class="dot bg-success">
-                            <!--         <div class="lighten"></div>
-        <div class="darken"></div> -->
-                        </div>
-                        <p>Success</p>
-                        <p>#27AE5F</p>
-                    </div>
-                    <div class="col span-2 text-center">
-                        <div title="$warning" class="dot bg-warning">
-                            <!--         <div class="lighten"></div>
-        <div class="darken"></div> -->
-                        </div>
-                        <p>Warning</p>
-                        <p>#F1C40F</p>
-                    </div>
-                    <div class="col span-2 text-center">
-                        <div title="$error" class="dot bg-error">
-                            <!--         <div class="lighten"></div>
-        <div class="darken"></div> -->
-                        </div>
-                        <p>Error</p>
-                        <p>#F15354</p>
-                    </div>
-                    <div class="col span-2 text-center">
-                        <div title="$disabled" class="dot bg-disabled">
-                            <!--         <div class="lighten"></div>
-        <div class="darken"></div> -->
-                        </div>
-                        <p>Disabled</p>
-                        <p>##dee1e3</p>
-                    </div>
-                    <div class="col span-2 text-center">
-                        <div title="$default" class="dot bg-default">
-                            <!--         <div class="lighten"></div>
-        <div class="darken"></div> -->
-                        </div>
-                        <p>Default</p>
-                        <p>#ecf0f1</p>
-                    </div>
-                </div>
-                <h1>h1 header</h1>
-                <h2>h2 header</h2>
-                <hr>
-                <h2>Templates</h2>
-                <h3 class="sub-section">Email Signature</h3>
-                <div class="row">
-                    <!--email sig-->
-                    <table border="0" cellspacing="0" cellpadding="0" width="485" style="width: 485px; display: inline-block">
-                        <tbody>
-                            <tr valign="top">
-                                <td style="width: 10px; padding-right:10px;"> <img src="https://s3.amazonaws.com/ucwebapp.wisestamp.com/a20309ee-9fe7-4f16-aaa9-1256a210bcbe/rancherlogocowblue.format_png.resize_200x.png#logo" width="65" height="28.7396694215" alt="photo" style="border-radius: 4px; width: 65px; height: 29px; max-width: 120px;" data-pin-nopin="true"> </td>
-                                <td class="border-color" style="border-right: 1px solid #78c9cf;"></td>
-                                <td style="display: inline-block; text-align:initial; font:12px Verdana;color:#646464;padding:0 10px">
-                                    <table border="0" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                            <tr>
-                                                <td style="display: inline-block; text-align:initial; font:12px Verdana;color:#646464;"> <b class="text-color theme-font">First Name</b>
-                                                    <br> <span style="display: inline-block;">Your Title here</span>, <span style="display: inline-block;">Rancher Labs</span> </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font:12px Verdana; color:#8d8d8d;font-size:12px;padding:5px 0"> <span style="display:inline-block;"><a href="tel:555-555-5555" style="display:inline-block; color:#8d8d8d;text-decoration: none;">555-555-5555</a></span> <span style="color: #78c9cf;display:inline-block;">|</span> <span style="display:inline-block;"><a href="mailto:name@rancher.com" style="display: inline-block; color:#8d8d8d;text-decoration: none;">name@rancher.com</a></span> <span style="color: #78c9cf;display:inline-block;">|</span> <span style="white-space: nowrap;display:inline-block;"><a href="http://rancher.com" rel="nofollow" target="_blank" style="display: inline-block; color:#8d8d8d;text-decoration: none;">rancher.com</a></span> <span style="color: #78c9cf;display:inline-block;">|<br></span> <span style="color:#8d8d8d; display:inline-block;">10050 N Wolfe Road, Suite SW1-272 Cupertino, CA 95014 USA</span> </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="margin-top: 5px">
-                                                    <a href="http://github.com/rancherio/rancher" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/github.png"></a>&nbsp;
-                                                    <a href="http://www.facebook.com/rancherlabs" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/facebook.png"></a>&nbsp;
-                                                    <a href="http://www.linkedin.com/company-beta/4819449/?pathWildcard=4819449" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/linkedin.png"></a>&nbsp;
-                                                    <a href="http://twitter.com/Rancher_Labs" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/twitter.png"></a>&nbsp;
-                                                    <a href="http://www.youtube.com/channel/UCh5Xtp82q8wjijP8npkVTBA/" target="_blank"><img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="https://s3.amazonaws.com/images.wisestamp.com/icons_32/youtube.png"></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!--email sig-->
-                </div>
+                </section>
             </main>
         </div>
         <!--end main content-->
-        <hr>
+    
         <!-- 
         <footer><small>Rancher and the cow logo are registered trademarks or trademarks of Rancher Labs, Inc. in the United States and other countries.  Other brand names mentioned herein are for identification purposes only and may be trademarks of their respective holder(s).  © 2017 Rancher Labs, Inc. All rights reserved.</small></footer> -->
     </div>

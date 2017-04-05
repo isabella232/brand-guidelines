@@ -1,6 +1,9 @@
 // start content
 @import url('https://fonts.googleapis.com/css?family=Prompt');
 
+h1 {
+  font-size: 4em;
+}
 
 .sidebar {
   nav {
@@ -35,11 +38,19 @@
   }
 }
 
+section {
+  margin-top: 100px;
+}
+
 .sub-section {
-  margin-top: 30px;
-  margin-bottom: 0;
-  background: $bg-default;
+  margin-bottom: 50px;
+
+  h3 {
+  margin: 0;
+  background: $link-color;
+  color: white;
   padding: 10px;
+  }
 }
 
 h5 {
