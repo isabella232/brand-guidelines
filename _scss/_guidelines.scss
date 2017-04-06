@@ -5,6 +5,11 @@ h1 {
   font-size: 4em;
 }
 
+h2 {
+  border-bottom: $bg-default 2px solid;
+  padding: 10px 0;
+}
+
 .sidebar {
   nav {
     position: fixed;
