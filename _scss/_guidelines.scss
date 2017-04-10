@@ -10,10 +10,28 @@ h2 {
   padding: 10px 0;
 }
 
+a {
+  &:hover {
+    text-decoration: none;
+    opacity: .5;
+  }
+}
+
+.container {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+main {
+  padding: 0 100px 0 50px;
+}
 .sidebar {
+  position: fixed;
+  height: 100%;
+
   nav {
-    position: fixed;
-    width: 12.416%;
+    // position: fixed;
+    // width: 12.416%;
     // width: 15.416%;
     
       ul {
@@ -55,6 +73,13 @@ section {
   background: $link-color;
   color: white;
   padding: 10px;
+  }
+
+  p {
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }
 
@@ -167,22 +192,52 @@ h5 {
   position: relative;
 }
 
-.lighten {
-  width: 25%;
-  height: 100px;
-  border-radius: 100% 0 0 100%;
-  position: absolute;
-  left: 0;
-  background: rgba(white, .5);
-}
-
-.darken {
-  width: 25%;
-  height: 100px;
-  border-radius: 0 100% 100% 0;
-  position: absolute;
-  right: 0;
-  background: rgba($black, .15);
-}
+// #colors + .row .span-2 {
+//     width: 15.16%;
+// }
 
 //typography
+
+
+
+// ///responsive scaling
+@media only screen and (min-width: map-get($breakpoints, large)) {
+  // body {
+  //   background: rgba(tomato, .2);
+  // }
+}
+
+@media only screen and (max-width: map-get($breakpoints, medium)) {
+  // body {
+  //   background: rgba(yellow, .2);
+  // }  
+  .sidebar {
+    position: relative;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 0 30px;
+  }
+  .bg-light-grey{
+    padding: 25px !important;
+  }
+  .span-2 {
+    width: 32%;
+    margin: 1% 1.25% 1% 0;
+  }
+  .span-4 {
+    width: 32.333%;
+    margin: 1% 1.25% 1% 0;
+  }
+}
+
+@media only screen and (max-width: map-get($breakpoints, small)) {
+  // body {
+  //   background: rgba(navy, .2);
+  // }
+  .span-2 {
+    width: 32.333%;
+    margin: 1% 1% 1% 0;
+  }
+}
