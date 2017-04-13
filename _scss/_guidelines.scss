@@ -10,6 +10,15 @@ h2 {
   padding: 10px 0;
 }
 
+h5 {
+  color: $mid-grey;
+  margin: 15px 0 5px 0;
+}
+
+p {
+  margin: 8px 0;
+}
+
 a {
   &:hover {
     text-decoration: none;
@@ -88,10 +97,6 @@ section {
   }
 }
 
-h5 {
-  color: $mid-grey;
-}
-
 //demo
 .img-fluid {
   width: 100%;
@@ -103,6 +108,11 @@ h5 {
   padding: 10px;
   border: solid $light-grey 2px;
   background: white;
+
+
+  h5 {
+    margin: 0;
+  }
 
   img {
     max-height: 75px;
@@ -121,6 +131,9 @@ h5 {
     position: absolute;
     right: -15px;
     top: -15px;
+    -webkit-transform: rotate(22.5deg); 
+    -moz-transform: rotate(22.5deg);
+    box-shadow: 0 0 3px rgba($black, .75)
   }
 }
 
