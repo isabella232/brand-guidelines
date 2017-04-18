@@ -142,8 +142,12 @@ section {
     }
 }
 
-.glasses {
-    width: 50px;
+// .glasses {
+//     width: 50px;
+// }
+.deal-cow {
+  height: auto;
+  width: 160px;
 }
 
 .glasses {
@@ -151,17 +155,16 @@ section {
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
     animation-fill-mode: forwards;
-    /*when the spec is finished*/
 }
 
 @keyframes dealwithit {
     0% {
         opacity: 0;
-        transform: translate(120px, -50px);
+        transform: translate(0, -50px);
     }
     100% {
         opacity: 1;
-        transform: translate(120px, 35px);
+        transform: translate(0, 0);
     }
 }
 
@@ -267,6 +270,7 @@ nav#nav-mobile a {
     margin: 0;
 }
 
+
 /* =Media Queries
 -------------------------------------------------------------- */
 
@@ -320,15 +324,15 @@ nav#nav-mobile a {
     //   background: rgba(navy, .2);
     // }
     .span-2 {
-      width: 32.333%;
-      margin: 1% 1% 1% 0;
+        width: 32.333%;
+        margin: 1% 1% 1% 0;
     }
     .span-4 {
-      width: 100%;
-      margin: 0;
+        width: 100%;
+        margin: 0;
     }
     .sidebar {
-      width: 100%;
-      z-index: 1;
+        width: 100%;
+        z-index: 1;
     }
 }
