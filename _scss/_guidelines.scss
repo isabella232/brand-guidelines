@@ -25,6 +25,16 @@ a {
     }
 }
 
+ol {
+    > li {
+        margin-bottom: 40px;
+    }
+}
+
+ul {
+    margin: 20px 0;
+}
+
 .container {
     max-width: 100%;
     min-width: 100%;
@@ -197,9 +207,10 @@ section {
 //logos
 //colors
 .dot {
-    width: 100%;
+    width: 100px;
     height: 100px;
-    border-radius: 90px;
+    margin: 0 auto;
+    border-radius: 100%;
     position: relative;
 }
 
@@ -275,7 +286,6 @@ nav#nav-mobile a {
     display: block;
     margin: 0;
 }
-
 
 /* =Media Queries
 -------------------------------------------------------------- */
