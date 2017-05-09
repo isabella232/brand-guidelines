@@ -2,8 +2,12 @@
 title: "Brand Assets"
 description: "Guidelines, assets and styles"
 
-url: https://lvuch.github.io/brand-guidelines/
-baseurl: ""
+# url: https://lvuch.github.io/brand-guidelines/
+# baseurl: ""
+
+url: https://lvuch.github.io
+baseurl: /test
+
 
 # Build settings
 markdown: kramdown
