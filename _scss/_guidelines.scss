@@ -115,6 +115,8 @@ section {
         bottom: 10px;
         right: 10px;
         left: 10px;
+        font-size: .75em;
+        line-height: 1.25em;
     }
     img {
         max-height: 75px;
@@ -132,6 +134,7 @@ section {
         position: absolute;
         right: -15px;
         top: -15px;
+        z-index: 2;
         -webkit-transform: rotate(22.5deg);
         -moz-transform: rotate(22.5deg);
         box-shadow: 0 0 3px rgba($black, .75)
@@ -291,6 +294,21 @@ nav#nav-mobile a {
 -------------------------------------------------------------- */
 
 @media all and (max-width: 900px) {
+
+}
+
+// ///responsive scaling
+@media only screen and (min-width: map-get($breakpoints, large)) {
+
+}
+
+@media only screen and (max-width: 960px) {
+    .span-3.yes, .span-3.no {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: map-get($breakpoints, medium)) { 
     #nav-trigger {
         display: block;
     }
@@ -300,19 +318,7 @@ nav#nav-mobile a {
     nav#nav-mobile {
         display: block;
     }
-}
 
-// ///responsive scaling
-@media only screen and (min-width: map-get($breakpoints, large)) {
-    // body {
-    //   background: rgba(tomato, .2);
-    // }
-}
-
-@media only screen and (max-width: map-get($breakpoints, medium)) {
-    // body {
-    //   background: rgba(yellow, .2);
-    // }  
     main {
         margin-left: 0;
         padding: 0 20px;
@@ -336,9 +342,6 @@ nav#nav-mobile a {
 }
 
 @media only screen and (max-width: map-get($breakpoints, small)) {
-    // body {
-    //   background: rgba(navy, .2);
-    // }
     .span-2 {
         width: 32.333%;
         margin: 1% 1% 1% 0;
