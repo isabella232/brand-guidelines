@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rancher Brand Guidelines & Resources</title>
+    <meta name="description" content="Rancher Brand Usage">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <link rel="icon" type="image/x-icon" href="{{site.baseurl}}/favicon.png" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="{{site.baseurl}}/js/scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="sidebar col span-2 text-center">
+                <nav id="nav-main" class="sidenav">
+                  <ul>
+                    <li><a href="{{site.baseurl}}/#logos">Logos</a></li>
+                    <li><a href="{{site.baseurl}}/#colors">Colors</a></li>
+                    <li><a href="{{site.baseurl}}/#typography">Typography</a></li>
+                    <li><a href="{{site.baseurl}}/#graphics">Graphics</a></li>
+                    <li><a href="{{site.baseurl}}/trademarks">Trademarks</a></li>
+                  </ul>
+                </nav>
+                <div id="nav-trigger">
+                  <span class="text-right">Menu <span class="plus"></span> </span>
+                </div>
+                <nav id="nav-mobile"></nav>
+            </div>
+            <main class="col span-10 offset-2">
+              {{content}}
+            </main>
+          </div>
+      </div>
+  </body>
+</html>

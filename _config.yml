@@ -2,11 +2,16 @@
 title: "Brand Assets"
 description: "Guidelines, assets and styles"
 
-url: http://rancher.com
-baseurl: "/brand-guidelines"
+#url: http://rancher.com
+#baseurl: ""
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: pretty
 sass:
   sass_dir: _scss
   style: compressed

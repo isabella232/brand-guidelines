@@ -1,8 +1,8 @@
-FROM jekyll/jekyll:latest AS jekyll
-#COPY Gemfile Gemfile.lock /srv/jekyll/
-#RUN bundle update && bundle install
-COPY . /srv/jekyll/
-RUN rm Gemfile Gemfile.lock &&  jekyll build
+FROM jekyll/jekyll AS builder
+WORKDIR /build
+COPY . /build
+RUN echo 'URL: "http://rancher.com"' >> _config.yml && echo 'baseurl: "/brand-guidelines"' >> _config.yml
+RUN jekyll build
 
 FROM nginx
-COPY --from=jekyll /srv/jekyll/_site /usr/share/nginx/html/brand-guidelines
+COPY --from=builder /build/_site /usr/share/nginx/html/brand-guidelines
